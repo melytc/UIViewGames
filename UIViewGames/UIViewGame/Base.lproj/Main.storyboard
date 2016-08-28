@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIViewGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztn-1l-5Tf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageGhost" translatesAutoresizingMaskIntoConstraints="NO" id="Rqp-gQ-isA">
+                                        <rect key="frame" x="135" y="100" width="51" height="50"/>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VwR-hn-YP3">
+                                        <rect key="frame" x="40" y="62" width="241" height="31"/>
+                                        <color key="tintColor" red="1" green="0.90119163328148777" blue="0.19252131300476283" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="1" green="0.91798386226519335" blue="0.31928265824445878" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="moveGhost:" destination="BYZ-38-t0r" eventType="valueChanged" id="6ub-Bl-0HF"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.44859352900093241" blue="0.6303532726499006" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7g-rg-oOt">
+                                <rect key="frame" x="0.0" y="196" width="320" height="183"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FeP-vU-6Wm">
+                                        <rect key="frame" x="43" y="83" width="234" height="2"/>
+                                        <color key="tintColor" red="0.30427206296854026" green="0.55326522435897441" blue="0.20187830640440566" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="40s-oX-qVz">
+                                        <rect key="frame" x="113" y="100" width="94" height="29"/>
+                                        <color key="tintColor" red="0.07456250186691267" green="0.54567307692307687" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="progressBarMove:" destination="BYZ-38-t0r" eventType="valueChanged" id="0NA-DE-O8g"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77275317402829491" green="1" blue="0.32957700877927865" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yID-8V-n3I">
+                                <rect key="frame" x="0.0" y="387" width="320" height="181"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Qnc-hi-orf">
+                                        <rect key="frame" x="99" y="83" width="123" height="29"/>
+                                        <segments>
+                                            <segment title="azúl"/>
+                                            <segment title="morado"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.98024934530258179" green="0.98023289442062378" blue="0.99251919984817505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="segcColors:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ud-vK-nPR"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3801212413733116" green="0.86185530953530931" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imaGhost" destination="Rqp-gQ-isA" id="f7o-VK-u6I"/>
+                        <outlet property="pvLine" destination="FeP-vU-6Wm" id="wxC-GI-eKW"/>
+                        <outlet property="segColor" destination="Qnc-hi-orf" id="FRK-VQ-9vj"/>
+                        <outlet property="slPacman" destination="VwR-hn-YP3" id="7A0-Wu-sc1"/>
+                        <outlet property="stepModifyLine" destination="40s-oX-qVz" id="Ub1-5h-utN"/>
+                        <outlet property="viewColors" destination="yID-8V-n3I" id="jOf-BY-4mu"/>
+                        <outlet property="viewPacman" destination="ztn-1l-5Tf" id="kHV-80-58b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="426"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImageGhost" width="300" height="300"/>
+    </resources>
+</document>

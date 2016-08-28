@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "339BDE89F967DC534C87D9A2508DEB0DDB4641F1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "339BDE89F967DC534C87D9A2508DEB0DDB4641F1" : 0,
+    "03FF9649E441315F423C22719007E33F58E74FDD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "45273B3C-BD96-472C-A753-5D61ADDB452D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "339BDE89F967DC534C87D9A2508DEB0DDB4641F1" : "UIViewGame\/",
+    "03FF9649E441315F423C22719007E33F58E74FDD" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UIViewGame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UIViewGame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/melytc\/HelloWorld.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03FF9649E441315F423C22719007E33F58E74FDD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/melytc\/UIViewGames.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "339BDE89F967DC534C87D9A2508DEB0DDB4641F1"
+    }
+  ]
+}
